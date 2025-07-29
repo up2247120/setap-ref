@@ -1,23 +1,41 @@
-# 💸 Budget Manager
+# Budget Manager App
 
-A lightweight, offline-first web app to track expenses and savings goals — built with HTML, CSS, and vanilla JavaScript.
+A simple budget management web app designed for students to track expenses, set savings goals, and visualize spending by category.
 
-## 🌟 Features
+## Features
 
-- Add, edit (soon), and delete expenses
-- Categorise by type (Food, Transport, etc.)
-- Set savings goals and track progress
-- Mobile-friendly and minimalist design
-- LocalStorage-based (no backend required)
-- Uses MVC architecture
+- Add expenses with description, amount, and category
+- Set a savings goal
+- View spending summaries with interactive charts using Chart.js
+- Data stored locally in the browser (`localStorage`) for privacy and offline use
+- Clean, minimal, and mobile-friendly interface
 
-## 🖼️ Screenshots
+## Getting Started
 
-![Screenshot of App](./screenshot.png) *(insert one)*
+To run the app locally:
 
-## 🚀 How to Run
+1. Clone the repository:
+git clone 
+2. Open the `index.html` file in your preferred web browser (Google Chrome recommended).
+ No backend or server setup required.
 
-1. Clone the repo:
-```bash
-git clone https://github.com/your-username/budget-app.git
-cd budget-app
+## Usage
+
+- Use the **Add Expense** tab to input your expenses.
+- Use the **Set Savings Goal** tab to enter your savings target.
+- Use the **View Dashboard** tab to see your spending breakdown and progress.
+
+## Development Notes
+
+- Built with vanilla JavaScript, HTML, and CSS.
+- Uses [Chart.js](https://www.chartjs.org/) for data visualization.
+- Follows a simple MVC architecture pattern for separation of concerns.
+- All data is stored locally for user privacy; no external data connections.
+
+## Future Improvements
+- Option to export data or sync across devices.
+- Dark mode toggle for accessibility.
+
+## License
+
+This project is released under the MIT License.
