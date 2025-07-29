@@ -40,6 +40,3 @@ git clone https://github.com/up2247120/setap-ref.git
 - Option to export data or sync across devices.
 - Dark mode toggle for accessibility.
 
-## License
-
-This project is released under the MIT License.
