@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Budget Manager</h1>
+    <div class="tabs">
+      <button class="tab-btn" onclick="showTab('add')">Add Expense</button>
+      <button class="tab-btn" onclick="showTab('goal')">Set Savings Goal</button>
+      <button class="tab-btn" onclick="showTab('dashboard')">View Dashboard</button>
+    </div>
+
+    <div id="tab-add" class="tab-content">
+      <h2>Add Expense</h2>
+      <input type="text" id="description" placeholder="Expense Description" />
+      <input type="number" id="amount" placeholder="Amount (£)" />
+      <select id="category">
+        <option>Savings</option>
+        <option>Gifts/Donations</option>
+        <option>Debt</option>
+        <option>Subscription Services</option>
+        <option>Personal (gym, haircuts)</option>
+        <option>Insurance</option>
+        <option>Healthcare</option>
+        <option>Clothing</option>
+        <option>Utilities</option>
+        <option>Food</option>
+        <option>Transport</option>
+        <option>Housing</option>
+        <option>Takeaways</option>
+      </select>
+      <button id="add-btn">Add Expense</button>
+    </div>
+
+    <div id="tab-goal" class="tab-content" style="display:none;">
+      <h2>Set Savings Goal</h2>
+      <input type="number" id="goal" placeholder="Savings Goal (£)" />
+      <button id="set-goal-btn">Set Goal</button>
+    </div>
+
+    <div id="tab-dashboard" class="tab-content" style="display:none;">
+      <h2>📊 Spending Summary</h2>
+      <canvas id="spendingChart" width="400" height="200"></canvas>
+      <h3>Spending Breakdown</h3>
+      <ul id="expense-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
